@@ -20,12 +20,12 @@ goals_a = soup.select('.ga')
 #string makeover
 name = []
 for i in range(len(list_name)):
-    temp= list_name[i].getText().strip() #gets the text between <td class="name"> and </td> and strips aka removes the spaces before and after word
+    temp= list_name[i].getText().strip() #gets the text between <td class="name"> and </td> and strips/ removes the spaces before and after word
     name.append(temp)
 
 win_r = []
 for i in range(len(win_rate)):
-    temp= win_rate[i].getText().strip()   #gets the text between <td class="pct text-danger"> and </td> and strips aka removes the spaces before and after word
+    temp= win_rate[i].getText().strip()  
     win_r.append(temp)
 
 year = []
