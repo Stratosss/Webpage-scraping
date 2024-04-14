@@ -55,7 +55,7 @@ for i in range(len(goals_a)):
 
 
 while True:
-         x = input("What do you want to do? 1) Print all data or 2) Print the teams that have a win rate >50%? (Quit with q): ")
+         x = input("What do you want to do? Press 1 for: Print all data or press 2 for: Print the teams that have a win rate >50%? (Quit with q): ")
          if x == "1":
             df = pd.DataFrame({
                                 "Team Name" : name, 
