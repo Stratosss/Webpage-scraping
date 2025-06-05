@@ -11,6 +11,7 @@ soup = BeautifulSoup(page.text, 'html.parser')
 
 column_titles = ['.name', '.year', '.wins', '.losses', '.pct','.gf', '.ga']
 columns = []
+
 #string makeover
 def construction_function(columns):
     col = soup.select(columns)
