@@ -13,8 +13,8 @@ column_titles = ['.name', '.year', '.wins', '.losses', '.pct','.gf', '.ga']
 columns = []
 
 #string makeover
-def construction_function(columns):
-    col = soup.select(columns)
+def construction_function(column):
+    col = soup.select(column)
     col_list = []
     for i in range(len(col)):
         temp_column = col[i].getText().strip() #gets the text between <td class="name"> and </td> and strips/ removes the spaces before and after word
