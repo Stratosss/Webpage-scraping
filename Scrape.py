@@ -14,12 +14,12 @@ categories = ['.name', '.pct', '.year', '.wins', '.losses', '.gf', '.ga']
 
 #string makeover
 def construction_function(param):
-    temp = soup.select(param)
-    temp_list = []
-    for i in range(len(temp)):
-        temp2 = temp[i].getText().strip() #gets the text between <td class="name"> and </td> and strips/ removes the spaces before and after word
-        temp_list.append(temp2)
-    return temp_list
+    columns = soup.select(param)
+    column_list = []
+    for i in range(len(columns)):
+        temp_column = columns[i].getText().strip() #gets the text between <td class="name"> and </td> and strips/ removes the spaces before and after word
+        column_list.append(temp_column)
+    return column_list
     
     
 def results(param):
