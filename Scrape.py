@@ -7,7 +7,7 @@ import sys
 url = 'https://www.scrapethissite.com/pages/forms/'
 page = requests.get(url)
 
-soup = BeautifulSoup(page.text, 'html')
+soup = BeautifulSoup(page.text, 'html.parser')
 
 categories = ['.name', '.pct', '.year', '.wins', '.losses', '.gf', '.ga']
 
