@@ -53,7 +53,7 @@ def results(param):
                 df = pd.DataFrame(new_table, columns=headers)
                 return df
                 
-            elif x == "q".upper():
+            elif x.strip().lower() == "q":
                 sys.exit()
             else:
                 print("Please select: 1 or 2 for printouts, or q for exit")
