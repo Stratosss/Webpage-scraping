@@ -42,15 +42,15 @@ def results(param):
 
                 rows = total.shape[0]
                 cols = total.shape[1]     
-                new_table =[]
+                arr =[]
                 for i in range(rows):
                     for j in range(cols):
                         if float(total[i,1]) > 0.5:
-                                new_table = np.append(new_table, total[i,j])
+                                arr = np.append(arr, total[i,j])
+                print(arr)
+                arr = arr.reshape(-1, 2) # -1: automatically calculates rows based on: total/requested columns
 
-                new_table = new_table.reshape(int(new_table.shape[0]/2), 2)
-
-                df = pd.DataFrame(new_table, columns=headers)
+                df = pd.DataFrame(arr, columns=headers)
                 return df
                 
             elif x.strip().lower() == "q":
