@@ -47,7 +47,7 @@ def results(param):
                     for j in range(cols):
                         if float(total[i,1]) > 0.5:
                                 arr = np.append(arr, total[i,j])
-                print(arr)
+                
                 arr = arr.reshape(-1, 2) # -1: automatically calculates rows based on: total/requested columns
 
                 df = pd.DataFrame(arr, columns=headers)
