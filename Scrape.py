@@ -37,7 +37,7 @@ def results(param):
                 return df
                 
             elif x == "2":
-                total= np.column_stack([param[0], param[4]])      #attempt to combine numpy and pandas
+                total= np.column_stack([param[0], param[4]])      
                 headers = ["Team Name", "Win %"]
 
                 rows = total.shape[0]
